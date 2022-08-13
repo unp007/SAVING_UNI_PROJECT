@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- set the encoding of your site -->
+  <meta charset="utf-8">
+  <!-- set the viewport width and initial-scale on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAVING.COM/login</title>
+  <!-- include the site stylesheet -->
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic%7cMontserrat:400,700%7cOxygen:400,300,700' rel='stylesheet' type='text/css'>
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/icon-fonts.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+  <script src="./js/form.js"></script>
+</head>
+<body>
+  <!-- main container of all the page elements -->
+  <div id="wrapper">
+    <!-- Page Loader -->
+    <div id="pre-loader" class="loader-container">
+      <div class="loader">
+        <img src="images/svg/rings.svg" alt="loader">
+      </div>
+    </div>
+    <div class="w1">
+      <!-- mt header style4 start here -->
+      <header id="mt-header" class="style4">
+				<!-- mt bottom bar start here -->
+				<div class="mt-bottom-bar">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- mt logo start here -->
+								<div class="mt-logo"><a href="#"><img src="./images/logo/savingscom.svg" alt="saving"></a></div>
+								<!-- mt icon list start here -->
+								<ul class="mt-icon-list">
+									<li class="hidden-lg hidden-md">
+										<a href="#" class="bar-opener mobile-toggle">
+											<span class="bar"></span>
+											<span class="bar small"></span>
+											<span class="bar"></span>
+										</a>
+									</li>
+									<li><a href="#" class="icon-magnifier"></a></li>
+									
+									<li>
+										<a href="#" class="bar-opener side-opener">
+											<span class="bar"></span>
+											<span class="bar small"></span>
+											<span class="bar"></span>
+										</a>
+									</li>
+								</ul><!-- mt icon list end here -->
+								<!-- navigation start here -->
+								<nav id="nav">
+									<ul>
+										<li>
+											<a class="drop-link" href="index.html">HOME <i class="fa fa-angle-down hidden-lg hidden-md" aria-hidden="true"></i></a>
+											<div class="s-drop">
+												<ul>
+													<li><a href="index.html">Homepage</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="drop">
+											<a href="drivers.html">DRIVERS <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+											<!-- mt dropmenu start here -->
+											<div class="mt-dropmenu text-left">
+												<!-- mt frame start here -->
+												<div class="mt-frame">
+													<!-- mt f box start here -->
+													<div class="mt-f-box">
+														<!-- mt col3 start here -->
+														<div class="mt-col-3">
+															<div class="sub-dropcont">
+																<strong class="title"><a href="drivers.html" class="mt-subopener">DRIVERS</a></strong>
+																<div class="sub-drop">
+																	<ul>
+																		<li><a href="drivers.html">ALL DRIVERS</a></li>
+																	</ul>
+																</div>
+															</div>
+															<div class="sub-dropcont">
+																<strong class="title"><a href="#" class="mt-subopener">404 Pages</a></strong>
+																<div class="sub-drop">
+																	<ul>
+																		<li><a href="404-page.html">404 Page</a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<!-- mt col3 end here -->
+
+														<!-- mt col3 start here -->
+														<div class="mt-col-3">
+															<div class="sub-dropcont">
+																<strong class="title"><a href="#" class="mt-subopener">About US</a></strong>
+																<div class="sub-drop">
+																	<ul>
+																		<li><a href="about-us.html">About</a></li>
+																	</ul>
+																</div>
+															</div>
+															<div class="sub-dropcont">
+																<strong class="title"><a href="#" class="mt-subopener">Contact US</a></strong>
+																<div class="sub-drop">
+																	<ul>
+																		<li><a href="contact-us.html">Contact</a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<!-- mt col3 end here -->
+
+														<!-- mt col3 start here -->
+
+														<!-- mt col3 end here -->
+
+														<!-- mt col3 start here -->
+														<div class="mt-col-3 promo">
+															<div class="mt-promobox">
+																<a href="#"><img src="./images/Auto-Rickshaw illustration.png" alt="promo banner" class="img-responsive"></a>
+															</div>
+														</div>
+														<!-- mt col3 end here -->
+													</div>
+													<!-- mt f box end here -->
+												</div>
+												<!-- mt frame end here -->
+											</div>
+											<!-- mt dropmenu end here -->
+											<span class="mt-mdropover"></span>
+										</li>
+										<li><a href="about-us.html">About</a></li>
+										<li>
+											<a class="drop-link" href="contact-us.html">Contact <i class="fa fa-angle-down hidden-lg hidden-md" aria-hidden="true"></i></a>
+											<div class="s-drop">
+												<ul>
+													<li><a href="contact-us.html">Contact</a></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</nav>
+								<!-- mt icon list end here -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- mt bottom bar end here -->
+				<span class="mt-side-over"></span>
+			</header><!-- mt header style4 end here -->
+			<div class="mt-side-menu">
+				<!-- mt holder start here -->
+				<div class="mt-holder">
+					<a href="#" class="side-close"><span></span><span></span></a>
+					<strong class="mt-side-title">MY ACCOUNT</strong>
+					<!-- mt side widget start here -->
+					<div class="mt-side-widget">
+						<header>
+							<span class="mt-side-subtitle">SIGN IN</span>
+							<p>Welcome back! Sign in to Student Account</p>
+						</header>
+						<form action="loginpage.html">
+							<fieldset>
+								<!-- <input type="email" placeholder="email address" class="input email">
+								<input type="password" placeholder="Password" class="input password">
+								<div class="box">
+									<span class="left"><input class="checkbox" type="checkbox" id="check1"><label for="check1">Remember Me</label></span>
+									<a href="#" class="help">Help?</a>
+								</div> -->
+								<button type="submit" class="btn-type1" >Login</button>
+							</fieldset>
+						</form>
+					</div>
+					<!-- mt side widget end here -->
+					<div class="or-divider"><span class="txt">or</span></div>
+					<!-- mt side widget start here -->
+					<div class="mt-side-widget">
+						<header>
+							<span class="mt-side-subtitle">CREATE NEW ACCOUNT</span>
+							<p>Create your very own account</p>
+						</header>
+						<form action="registerpage.html">
+							<fieldset>
+								<!-- <input type="text" placeholder="Username or email address" class="input"> -->
+								<button type="submit" class="btn-type1">Register</button>
+							</fieldset>
+						</form>
+					</div>
+					<!-- mt side widget end here -->
+				</div>
+				<!-- mt holder end here -->
+			</div><!-- mt side menu end here -->
+      <!-- mt search popup start here -->
+      <div class="mt-search-popup">
+        <div class="mt-holder">
+          <a href="#" class="search-close"><span></span><span></span></a>
+          <div class="mt-frame">
+            <form action="#">
+              <fieldset>
+                <input type="text" placeholder="Search...">
+                <span class="icon-microphone"></span>
+                <button class="icon-magnifier" type="submit"></button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div><!-- mt search popup end here -->
+      <!-- Main of the Page -->
+      <main id="mt-main">
+        <!-- Mt Content Banner of the Page -->
+        <section class="mt-contact-banner" style="background-color: rgb(250, 215, 169);">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 text-center">
+                <h1>login</h1>
+                <nav class="breadcrumbs">
+                  <ul class="list-unstyled">
+                    <li><a href="index.html">home <i class="fa fa-angle-right"></i></a></li>
+                    <li>login</li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Mt Content Banner of the Page end -->
+        <!-- Mt About Section of the Page -->
+        <section class="mt-about-sec" style="padding-bottom: 0;">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="txt">
+                  <h2>login</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Mt About Section of the Page -->
+        <!-- Mt Detail Section of the Page -->
+        <section class="mt-detail-sec toppadding-zero">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-8 col-sm-push-2">
+                <div class="holder" style="margin: 0;">
+                    <div class="mt-side-widget">
+                      <header>
+                        <h2 style="margin: 0 0 5px;">SIGN IN</h2>
+                        <p>Welcome back! Sign in to Your Account</p>
+                      </header>
+                      <form action="#">
+                        <fieldset>
+                          <input type="text" placeholder="Username or email address" class="input" id="loginId">
+                          <input type="password" placeholder="Password" class="input" id="loginpassword">
+                          <div class="box">
+                            <span class="left"><input class="checkbox" type="checkbox" id="check1"><label for="check1">Remember Me</label></span>
+                            <a href="#" class="help">Help?</a>
+                          </div>
+                          <button onclick="signIn()" type="submit" class="btn-type1">Login</button>
+                        </fieldset>
+                      </form>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Mt Detail Section of the Page end -->
+      </main><!-- Main of the Page end -->
+      <!-- footer of the Page -->
+      <footer id="mt-footer" class="style1 wow fadeInUp" data-wow-delay="0.4s">
+				<!-- Footer Holder of the Page -->
+				<div class="footer-holder dark">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 col-md-3 mt-paddingbottomsm">
+								<!-- F Widget About of the Page -->
+								<div class="f-widget-about">
+									<div class="logo">
+										<a href="index.html"><img src="./images/logo/savingscom.svg" alt="Schon"></a>
+									</div>
+									
+									<!-- Social Network of the Page end -->
+								</div>
+								<!-- F Widget About of the Page end -->
+							</div>
+							
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mt-paddingbottomxs">
+								<!-- Footer Tabs of the Page -->
+								<div class="f-widget-tabs">
+									<h3 class="f-widget-heading">Services</h3>
+									<ul class="list-unstyled tabs">
+										<li><a href="#">Nadiad to Changa</a></li>
+										<li><a href="#">VidhyaNagar to Changa</a></li>
+										<li><a href="#">Changa to Nadiad</a></li>
+										<li><a href="#">Changa to VidhyaNagar</a></li>
+										<li><a href="#">Rickshaw Services</a></li>
+								
+									</ul>
+								</div>
+								<!-- Footer Tabs of the Page -->
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 text-right">
+								<!-- F Widget About of the Page -->
+								<div class="f-widget-about">
+									<h3 class="f-widget-heading">Information</h3>
+									<ul class="list-unstyled address-list align-right">
+										<li><i class="fa fa-map-marker"></i><address>Om Hostel<br>Changa Nadiad</address></li>
+										<li><i class="fa fa-phone"></i><a href="tel:15553332211">+91 9999999999</a></li>
+									</ul>
+								</div>
+								<!-- F Widget About of the Page end -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Footer Holder of the Page end -->
+				<!-- Footer Area of the Page -->
+				<div class="footer-area">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6">
+								<p>© <a href="index.html">Savings.com</a> - All rights Reserved</p>
+							</div>
+							<div class="col-xs-12 col-sm-6 text-right">
+								<div class="bank-card">
+									<img src="images/bank-card.png" alt="bank-card">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Footer Area of the Page end -->
+			</footer><!-- footer of the Page end -->
+    </div>
+    <span id="back-top" class="fa fa-arrow-up"></span>
+  </div>
+  <!-- include jQuery -->
+  <script src="js/jquery.js"></script>
+  <!-- include jQuery -->
+  <script src="js/plugins.js"></script>
+  <!-- include jQuery -->
+  <script src="js/jquery.main.js"></script>
+</body>
+</html>

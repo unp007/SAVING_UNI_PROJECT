@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SAVING.COM</title>
+	<!-- include the site stylesheet -->
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic%7cMontserrat:400,700%7cOxygen:400,300,700' rel='stylesheet' type='text/css'>
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/animate.css">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="css/icon-fonts.css">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="css/responsive.css">
+	<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+  <script src="./js/form.js"></script>
+</head>
+<body>
+	<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<!-- Page Loader -->
+    <div id="pre-loader" class="loader-container">
+      <div class="loader">
+        <img src="images/svg/rings.svg" alt="loader">
+      </div>
+    </div>
+		<!-- W1 start here -->
+		<div class="w1">
+			<!-- mt header style4 start here -->
+			<header id="mt-header" class="style4">
+				<!-- mt bottom bar start here -->
+				<div class="mt-bottom-bar">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- mt logo start here -->
+								<div class="mt-logo"><a href="#"><img src="./images/logo/savingscom.svg" alt="saving"></a></div>
+								<!-- mt icon list start here -->
+								<ul class="mt-icon-list">
+									<li class="hidden-lg hidden-md">
+										<a href="#" class="bar-opener mobile-toggle">
+											<span class="bar"></span>
+											<span class="bar small"></span>
+											<span class="bar"></span>
+										</a>
+									</li>
+									<li><a href="#" class="icon-magnifier"></a></li>
+									
+									<li>
+										<a href="#" class="bar-opener side-opener">
+											<span class="bar"></span>
+											<span class="bar small"></span>
+											<span class="bar"></span>
+										</a>
+									</li>
+								</ul><!-- mt icon list end here -->
+								<!-- navigation start here -->
+								<nav id="nav">
+									<ul>
+										<li>
+											<a class="drop-link" href="index.html">HOME <i class="fa fa-angle-down hidden-lg hidden-md" aria-hidden="true"></i></a>
+											<div class="s-drop">
+												<ul>
+													<li><a href="index.html">Homepage</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="drop">
+											<a href="drivers.html">DRIVERS <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+											<!-- mt dropmenu start here -->
+											<div class="mt-dropmenu text-left">
+												<!-- mt frame start here -->
+												<div class="mt-frame">
+													<!-- mt f box start here -->
+													<div class="mt-f-box">
+														<!-- mt col3 start here -->
+														<div class="mt-col-3">
+															<div class="sub-dropcont">
+																<strong class="title"><a href="drivers.html" class="mt-subopener">DRIVERS</a></strong>
+																<div class="sub-drop">
+																	<ul>
+																		<li><a href="drivers.html">ALL DRIVERS</a></li>
+																	</ul>
+																</div>
+															</div>
+															<div class="sub-dropcont">
+																<strong class="title"><a href="#" class="mt-subopener">404 Pages</a></strong>
+																<div class="sub-drop">
+																	<ul>
+																		<li><a href="404-page.html">404 Page</a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<!-- mt col3 end here -->
+
+														<!-- mt col3 start here -->
+														<div class="mt-col-3">
+															<div class="sub-dropcont">
+																<strong class="title"><a href="#" class="mt-subopener">About US</a></strong>
+																<div class="sub-drop">
+																	<ul>
+																		<li><a href="about-us.html">About</a></li>
+																	</ul>
+																</div>
+															</div>
+															<div class="sub-dropcont">
+																<strong class="title"><a href="#" class="mt-subopener">Contact US</a></strong>
+																<div class="sub-drop">
+																	<ul>
+																		<li><a href="contact-us.html">Contact</a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<!-- mt col3 end here -->
+
+														<!-- mt col3 start here -->
+
+														<!-- mt col3 end here -->
+
+														<!-- mt col3 start here -->
+														<div class="mt-col-3 promo">
+															<div class="mt-promobox">
+																<a href="#"><img src="./images/Auto-Rickshaw illustration.png" alt="promo banner" class="img-responsive"></a>
+															</div>
+														</div>
+														<!-- mt col3 end here -->
+													</div>
+													<!-- mt f box end here -->
+												</div>
+												<!-- mt frame end here -->
+											</div>
+											<!-- mt dropmenu end here -->
+											<span class="mt-mdropover"></span>
+										</li>
+										<li><a href="about-us.html">About</a></li>
+										<li>
+											<a class="drop-link" href="contact-us.html">Contact <i class="fa fa-angle-down hidden-lg hidden-md" aria-hidden="true"></i></a>
+											<div class="s-drop">
+												<ul>
+													<li><a href="contact-us.html">Contact</a></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</nav>
+								<!-- mt icon list end here -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- mt bottom bar end here -->
+				<span class="mt-side-over"></span>
+			</header><!-- mt header style4 end here -->
+			<!-- mt side menu start here -->
+			<div class="mt-side-menu">
+				<!-- mt holder start here -->
+				<div class="mt-holder">
+					<a href="#" class="side-close"><span></span><span></span></a>
+					<strong class="mt-side-title">MY ACCOUNT</strong>
+					<!-- mt side widget start here -->
+					<div class="mt-side-widget">
+						<header>
+							<span class="mt-side-subtitle">SIGN IN</span>
+							<p>Welcome back! Sign in to Student Account</p>
+						</header>
+						<form action="loginpage.html">
+							<fieldset>
+								<!-- <input type="email" placeholder="email address" class="input email">
+								<input type="password" placeholder="Password" class="input password">
+								<div class="box">
+									<span class="left"><input class="checkbox" type="checkbox" id="check1"><label for="check1">Remember Me</label></span>
+									<a href="#" class="help">Help?</a>
+								</div> -->
+								<button type="submit" class="btn-type1" >Login</button>
+							</fieldset>
+						</form>
+					</div>
+					<!-- mt side widget end here -->
+					<div class="or-divider"><span class="txt">or</span></div>
+					<!-- mt side widget start here -->
+					<div class="mt-side-widget">
+						<header>
+							<span class="mt-side-subtitle">CREATE NEW ACCOUNT</span>
+							<p>Create your very own account</p>
+						</header>
+						<form action="registerpage.html">
+							<fieldset>
+								<!-- <input type="text" placeholder="Username or email address" class="input"> -->
+								<button type="submit" class="btn-type1">Register</button>
+							</fieldset>
+						</form>
+					</div>
+					<div class="or-divider"><span class="txt">or</span></div>
+					<!-- mt side widget start here -->
+					<div class="mt-side-widget">
+						<header>
+							<span class="mt-side-subtitle">LOGOUT</span>
+						</header>
+						<form action="#">
+							<fieldset>
+								<!-- <input type="text" placeholder="Username or email address" class="input"> -->
+								<button type="submit" onclick="signOut()" class="btn-type1">Logout</button>
+							</fieldset>
+						</form>
+					</div>
+					<!-- mt side widget end here -->
+				</div>
+				<!-- mt holder end here -->
+			</div><!-- mt side menu end here -->
+			<!-- mt search popup start here -->
+			<div class="mt-search-popup">
+				<div class="mt-holder">
+					<a href="#" class="search-close"><span></span><span></span></a>
+					<div class="mt-frame">
+						<form action="#">
+							<fieldset>
+								<input type="text" placeholder="Search...">
+								<span class="icon-microphone"></span>
+								<button class="icon-magnifier" type="submit"></button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div><!-- mt search popup end here -->
+			<!-- mt main slider start here -->
+			<div class="mt-main-slider">
+				<!-- slider banner-slider start here -->
+				<div class="slider banner-slider">
+					<!-- holder start here -->
+					<div class="holder text-center" style="background-image: url(./img/2.png);">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="text centerize">
+										<strong class="title">GET YOUR HOSPITALITY</strong>
+										<h1>FIND RIKSHAW</h1>
+										<h2>NOW</h2>
+										<div class="txt">
+										</div>
+										<a href="product-detail.html" class="shop">CheckOut now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- holder end here -->
+
+					<!-- holder start here -->
+					<div class="holder text-center" style="background-image: url(./img/15.png);">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="text right">
+										<strong class="title">WITH</strong>
+										<h1>BEST DRIVERS</h1>
+										<h2>AVAILABLE</h2>
+										<div class="txt">
+										</div>
+										<a href="product-detail.html" class="shop">HIRE NOW</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- holder end here -->
+					
+					<!-- holder start here -->
+					<!-- <div class="holder text-center" style="background-image: url(http://placehold.it/1920x585);">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="text">
+										<strong class="title">FURNITURE DESIGNS IDEAS</strong>
+										<h1>CARDBOARD</h1>
+										<h2> Sofas and Armchairs</h2>
+										<div class="txt">
+											<p>Consectetur adipisicing elit. Beatae accusamus, optio, repellendus inventore</p>
+										</div>
+										<a href="product-detail.html" class="shop">shop now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> -->
+					<!-- holder end here -->
+				</div>
+				<!-- slider regular end here -->
+			</div><!-- mt main slider end here -->
+			<!-- mt main start here -->
+			<main id="mt-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<!-- banner frame start here -->
+							<div class="banner-frame">
+								<!-- banner-1 start here -->
+								<div class="banner-1 wow fadeInLeft" data-wow-delay="0.4s">
+									<img alt="image description" src="img/10.jpg">
+									<div class="holder">
+										<h2>New User <br>Account</h2>
+										<div class="txts">
+											<a class="btn-shop" href="product-detail.html">
+												<span>CheckOut now</span>
+												<i class="fa fa-angle-right"></i>
+											</a>
+											<div class="discount">
+												<span>-20%</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- banner-1 end here -->
+
+								<!-- banner-box first start here -->
+								<div class="banner-box first">
+									<!-- banner-2 start here -->
+									<div class="banner-2 wow fadeInUp" data-wow-delay="0.4s">
+										<img alt="image description" src="img/15.png">
+										<div class="holder">
+											<h2>Our Daily Costemers <br>109</h2>
+										</div>
+									</div>
+									<!-- banner-2 end here -->
+
+									<!-- banner-3 start here -->
+									<div class="banner-3 right wow fadeInDown" data-wow-delay="0.4s">
+										<img alt="image description" src="img/4.png">
+										<div class="holder">
+											<h2>Our Daily new Costemers <br>10</h2>
+											<a href="product-detail.html" class="shop">CheckOut NOW</a>
+										</div>
+									</div>
+									<!-- banner-3 end here -->
+								</div>
+								<!-- banner-box first end here -->
+
+								<!-- banner-4 start here -->
+								<div class="banner-4 hidden-sm wow fadeInRight" data-wow-delay="0.4s">
+									<img alt="image description" src="img/11.jpg">
+									<div class="holder">
+										<h2>Our Drivers <br>40</h2>
+										<a class="btn-shop add" href="product-detail.html">
+											<span>hire me</span>
+											<i class="fa fa-angle-right"></i>
+										</a>
+									</div>
+								</div>
+								<!-- banner-4 end here -->
+							</div>
+							<!-- banner frame end here -->
+							<!-- mt producttabs start here -->
+							<div class="mt-producttabs wow fadeInUp" data-wow-delay="0.4s">
+								<!-- producttabs start here -->
+								<ul class="producttabs">
+									<li><a href="#tab1" class="active">AVERAGE PRICE</a></li>
+								</ul>
+								<!-- producttabs end here -->
+								<div class="tab-content text-center">
+									<div id="tab1">
+										<!-- tabs slider start here -->
+										<div class="tabs-slider">
+											<!-- slide start here -->
+											<div class="slide">
+												<!-- mt product1 center start here -->
+												<div class="mt-product1 mt-paddingbottom20">
+													<div class="box">
+														<div class="b1">
+															<div class="b2">
+																<a href="hostels.html"><img src="img/hostel to vidya.JPG" alt="image description"></a>
+																<span class="caption">
+																	<span class="new">NEW</span>
+																</span>
+																<ul class="mt-stars">
+																	<li><i class="fa fa-star"></i></li>
+																	<li><i class="fa fa-star"></i></li>
+																	<li><i class="fa fa-star"></i></li>
+																	<li><i class="fa fa-star-o"></i></li>
+																</ul>
+																<ul class="links">
+																	<li><a href="hostels.html"><i class="icomoon icon-exchange"></i></a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="txt">
+														<strong class="title"><a href="hostels.html">Hostel To VidhyaNagar</a></strong>
+														<span class="price"><i class="fa"></i> <span>₹ 17.00</span></span>
+													</div>
+												</div><!-- mt product1 center end here -->
+												<!-- mt product1 center start here -->
+												<div class="mt-product1 mt-paddingbottom20">
+													<div class="box">
+														<div class="b1">
+															<div class="b2">
+																<a href="drivers.html"><img src="img/college to vidyanamgar.JPG" alt="image description"></a>
+																<ul class="mt-stars">
+																	<li><i class="fa fa-star"></i></li>
+																	<li><i class="fa fa-star"></i></li>
+																	<li><i class="fa fa-star"></i></li>
+																	<li><i class="fa fa-star-o"></i></li>
+																</ul>
+																<ul class="links">
+																	<li><a href="drivers.html"><i class="icomoon icon-exchange"></i></a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="txt">
+														<strong class="title"><a href="drivers.html">Collage To VidhyaNagar</a></strong>
+														<span class="price"><i class="fa"></i> <span>₹ 16.00</span></span>
+													</div>
+												</div>
+												<!-- mt product1 center end here -->
+											</div>
+											<!-- slide end here -->
+											<!-- slide start here -->
+											<div class="slide">
+												<!-- mt product1 center start here -->
+												<div class="mt-product1 mt-paddingbottom20">
+													<div class="box">
+														<div class="b1">
+															<div class="b2">
+																<a href="hostels.html"><img src="img/hostel to nadiad.JPG" alt="image description"></a>
+																<ul class="links">
+																	<li><a href="hostels.html"><i class="icomoon icon-exchange"></i></a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="txt">
+														<strong class="title"><a href="hostels.html">Hostel To Nadiad</a></strong>
+														<span class="price"><i class="fa"></i> <span>₹ 14.00</span></span>
+													</div>
+												</div><!-- mt product1 center end here -->
+												<!-- mt product1 center start here -->
+												<div class="mt-product1 mt-paddingbottom20">
+													<div class="box">
+														<div class="b1">
+															<div class="b2">
+																<a href="drivers.html"><img src="img/college to nadia.JPG" alt="image description"></a>
+																<span class="caption">
+																</span>
+																<ul class="links">
+																	<li><a href="drivers.html"><i class="icomoon icon-exchange"></i></a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="txt">
+														<strong class="title"><a href="drivers.html">Collage to Nadiad</a></strong>
+														<span class="price"><i class="fa"></i> <span>₹ 15.00</span></span>
+													</div>
+												</div>
+												<!-- mt product1 center end here -->
+											</div>
+											<!-- slide end here -->
+											<!-- slide start here -->
+											<div class="slide">
+												<!-- mt product1 center start here -->
+												<div class="mt-product1 mt-paddingbottom20">
+													<div class="box">
+														<div class="b1">
+															<div class="b2">
+																<a href="hostels.html"><img src="img/hostel.png" alt="image description"></a>
+																<ul class="links">
+																	<li><a href="hostels.html"><i class="icomoon icon-exchange"></i></a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="txt">
+														<strong class="title"><a href="hostels.html">Hostel To Other</a></strong>
+														<span class="price"><i class="fa"></i> <span>Not fixed</span></span>
+													</div>
+												</div><!-- mt product1 center end here -->
+												<!-- mt product1 center start here -->
+												<div class="mt-product1 mt-paddingbottom20">
+													<div class="box">
+														<div class="b1">
+															<div class="b2">
+																<a href="drivers.html"><img src="img/college to other.JPG" alt="image description"></a>
+																<ul class="mt-stars">
+																	<li><i class="fa fa-star"></i></li>
+																	<li><i class="fa fa-star"></i></li>
+																	<li><i class="fa fa-star"></i></li>
+																	<li><i class="fa fa-star-o"></i></li>
+																</ul>
+																<ul class="links">
+																	<li><a href="drivers.html"><i class="icomoon icon-exchange"></i></a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="txt">
+														<strong class="title"><a href="drivers.html">Collage To Other</a></strong>
+														<span class="price"><i class="fa"></i> <span>Not Fixed</span></span>
+													</div>
+												</div>
+												<!-- mt product1 center end here -->
+											</div>
+											<!-- slide end here -->
+											<!-- slide start here -->
+											<div class="slide">
+												<!-- mt product1 center start here -->
+												<div class="mt-product1 mt-paddingbottom20">
+													<div class="box">
+														<div class="b1">
+															<div class="b2">
+																<a href="drivers.html"><img src="img/nadiad to changa.JPG" alt="image description"></a>
+																<span class="caption">
+																	<span class="off">15% Off</span>
+																	<span class="new">NEW</span>
+																</span>
+																<ul class="mt-stars">
+																	<li><i class="fa fa-star"></i></li>
+																	<li><i class="fa fa-star"></i></li>
+																	<li><i class="fa fa-star"></i></li>
+																	<li><i class="fa fa-star-o"></i></li>
+																</ul>
+																<ul class="links">
+																	<li><a href="drivers.html"><i class="icomoon icon-exchange"></i></a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="txt">
+														<strong class="title"><a href="drivers.html">Nadiad To Changa (Day)</a></strong>
+														<span class="price"><i class="fa"></i> <span>₹ 14.00</span></span>
+													</div>
+												</div><!-- mt product1 center end here -->
+												<!-- mt product1 center start here -->
+												<div class="mt-product1 mt-paddingbottom20">
+													<div class="box">
+														<div class="b1">
+															<div class="b2">
+																<a href="drivers.html"><img src="img/vidya to changa.JPG" alt="image description"></a>
+																<ul class="links">
+																	<li><a href="drivers.html"><i class="icomoon icon-exchange"></i></a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="txt">
+														<strong class="title"><a href="drivers.html">VidhyaNagar To Changa (Day)</a></strong>
+														<span class="price"><i class="fa"></i> <span>₹ 15.00</span></span>
+													</div>
+												</div>
+												<!-- mt product1 center end here -->
+											</div>
+											<!-- slide end here -->
+											<!-- slide start here -->
+											<div class="slide">
+												<!-- mt product1 center start here -->
+												<div class="mt-product1 mt-paddingbottom20">
+													<div class="box">
+														<div class="b1">
+															<div class="b2">
+																<a href="drivers.html"><img src="img/nadiad to changa.JPG	" alt="image description"></a>
+																<ul class="links">
+																	<li><a href="drivers.html"><i class="icomoon icon-exchange"></i></a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="txt">
+														<strong class="title"><a href="drivers.html">Nadiad To Changa (Night) Special</a></strong>
+														<span class="price"><i class="fa"></i> <span>₹ 170.00</span></span>
+													</div>
+												</div><!-- mt product1 center end here -->
+												<!-- mt product1 center start here -->
+												<div class="mt-product1 mt-paddingbottom20">
+													<div class="box">
+														<div class="b1">
+															<div class="b2">
+																<a href="drivers.html"><img src="img/vidya to changa.JPG" alt="image description"></a>
+																<ul class="links">
+																	<li><a href="drivers.html"><i class="icomoon icon-exchange"></i></a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="txt">
+														<strong class="title"><a href="drivers.html">VidhyaNagar To Changa(Night) special</a></strong>
+														<span class="price"><i class="fa"></i> <span>₹ 170.00</span></span>
+													</div>
+												</div>
+												<!-- mt product1 center end here -->
+											</div>
+											<!-- slide end here -->
+										</div>
+										<!-- tabs slider end here -->
+									</div>
+									
+								</div>
+							</div>
+							<!-- mt producttabs end here -->
+						</div>
+					</div>
+				</div>
+				<!-- mt bestseller start here -->
+				<div class="mt-bestseller bg-grey text-center wow fadeInUp" data-wow-delay="0.4s">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 mt-heading text-uppercase">
+								<h2 class="heading">BEST DRIVERS</h2>
+								<p>EXCEPTEUR SINT OCCAECAT</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="bestseller-slider">
+									<div class="slide">
+										<!-- mt product1 center start here -->
+										<div class="mt-product1 large">
+											<div class="box">
+												<div class="b1">
+													<div class="b2">
+														<a href="product-detail.html"><img src="img/16.png" alt="image description"></a>
+														<span class="caption">
+															<span class="best-price">Best Price</span>
+														</span>
+														<ul class="links add">
+															<li><a href="product-detail.html"><i class="icomoon icon-exchange"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="txt">
+												<strong class="title"><a href="product-detail.html">Chimanbhai</a></strong>
+												<span class="price"><i class="fa"></i> <span>₹ 14.00</span></span>
+											</div>
+										</div><!-- mt product1 center end here -->
+									</div>
+									<div class="slide">
+										<!-- mt product1 center start here -->
+										<div class="mt-product1 large">
+											<div class="box">
+												<div class="b1">
+													<div class="b2">
+														<a href="product-detail.html"><img src="img/21.jpg" alt="image description"></a>
+														<ul class="links add">
+															<li><a href="product-detail.html"><i class="icomoon icon-exchange"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="txt">
+												<strong class="title"><a href="product-detail.html">Ramanbhai</a></strong>
+												<span class="price"><i class="fa"></i> <span>₹ 16.00</span></span>
+											</div>
+										</div><!-- mt product1 center end here -->
+									</div>
+									<div class="slide">
+										<!-- mt product1 center start here -->
+										<div class="mt-product1 large">
+											<div class="box">
+												<div class="b1">
+													<div class="b2">
+														<a href="product-detail.html"><img src="img/18.png" alt="image description"></a>
+														<ul class="links add">
+															<li><a href="product-detail.html"><i class="icomoon icon-exchange"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="txt">
+												<strong class="title"><a href="product-detail.html">Maksudbhai</a></strong>
+												<span class="price"><i class="fa"></i> <span>₹ 17.00</span></span>
+											</div>
+										</div><!-- mt product1 center end here -->
+									</div>
+									<div class="slide">
+										<!-- mt product1 center start here -->
+										<div class="mt-product1 large">
+											<div class="box">
+												<div class="b1">
+													<div class="b2">
+														<a href="product-detail.html"><img src="img/22.jpg" alt="image description"></a>
+														<span class="caption">
+															<span class="best-price">Best Price</span>
+														</span>
+														<ul class="links add">
+															<li><a href="product-detail.html"><i class="icomoon icon-exchange"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="txt">
+												<strong class="title"><a href="product-detail.html">Rameshbhai</a></strong>
+												<span class="price"><i class="fa"></i> <span>₹ 14.00</span></span>
+											</div>
+										</div><!-- mt product1 center end here -->
+									</div>
+									<div class="slide">
+										<!-- mt product1 center start here -->
+										<div class="mt-product1 large">
+											<div class="box">
+												<div class="b1">
+													<div class="b2">
+														<a href="product-detail.html"><img src="img/24.jpg" alt="image description"></a>
+														<ul class="links add">
+															<li><a href="product-detail.html"><i class="icomoon icon-exchange"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="txt">
+												<strong class="title"><a href="product-detail.html">Ravibhai</a></strong>
+												<span class="price"><i class="fa"></i> <span>₹ 15.00</span></span>
+											</div>
+										</div><!-- mt product1 center end here -->
+									</div>
+									<div class="slide">
+										<!-- mt product1 center start here -->
+										<div class="mt-product1 large">
+											<div class="box">
+												<div class="b1">
+													<div class="b2">
+														<a href="product-detail.html"><img src="img/27.jpg" alt="image description"></a>
+														<ul class="links add">
+															<li><a href="product-detail.html"><i class="icomoon icon-exchange"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="txt">
+												<strong class="title"><a href="product-detail.html">Rambhai</a></strong>
+												<span class="price"><i class="fa"></i> <span>₹ 16.00</span></span>
+											</div>
+										</div><!-- mt product1 center end here -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- mt bestseller end here -->
+			</main><!-- mt main end here -->
+			<!-- footer of the Page -->
+			<footer id="mt-footer" class="style1 wow fadeInUp" data-wow-delay="0.4s">
+				<!-- Footer Holder of the Page -->
+				<div class="footer-holder dark">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 col-md-3 mt-paddingbottomsm">
+								<!-- F Widget About of the Page -->
+								<div class="f-widget-about">
+									<div class="logo">
+										<a href="index.html"><img src="./images/logo/savingscom.svg" alt="Schon"></a>
+									</div>
+									
+									<!-- Social Network of the Page end -->
+								</div>
+								<!-- F Widget About of the Page end -->
+							</div>
+							
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 mt-paddingbottomxs">
+								<!-- Footer Tabs of the Page -->
+								<div class="f-widget-tabs">
+									<h3 class="f-widget-heading">Services</h3>
+									<ul class="list-unstyled tabs">
+										<li><a href="#">Nadiad to Changa</a></li>
+										<li><a href="#">VidhyaNagar to Changa</a></li>
+										<li><a href="#">Changa to Nadiad</a></li>
+										<li><a href="#">Changa to VidhyaNagar</a></li>
+										<li><a href="#">Rickshaw Services</a></li>
+								
+									</ul>
+								</div>
+								<!-- Footer Tabs of the Page -->
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 text-right">
+								<!-- F Widget About of the Page -->
+								<div class="f-widget-about">
+									<h3 class="f-widget-heading">Information</h3>
+									<ul class="list-unstyled address-list align-right">
+										<li><i class="fa fa-map-marker"></i><address>Om Hostel<br>Changa Nadiad</address></li>
+										<li><i class="fa fa-phone"></i><a href="tel:9426223419">+91 9999999999</a></li>
+									</ul>
+								</div>
+								<!-- F Widget About of the Page end -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Footer Holder of the Page end -->
+				<!-- Footer Area of the Page -->
+				<div class="footer-area">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6">
+								<p>© <a href="index.html">Savings.com</a> - All rights Reserved</p>
+							</div>
+							<div class="col-xs-12 col-sm-6 text-right">
+								<div class="bank-card">
+									<img src="images/bank-card.png" alt="bank-card">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Footer Area of the Page end -->
+			</footer><!-- footer of the Page end -->
+		</div><!-- W1 end here -->
+		<span id="back-top" class="fa fa-arrow-up"></span>
+	</div>
+	<!-- include jQuery -->
+	<script src="js/jquery.js"></script>
+	<!-- include jQuery -->
+	<script src="js/plugins.js"></script>
+	<!-- include jQuery -->
+	<script src="js/jquery.main.js"></script>
+</body>
+</html>
